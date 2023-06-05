@@ -1,5 +1,6 @@
 
 import './App.css'
+import 'mapbox-gl/dist/mapbox-gl.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home';
 import Heritage from './Pages/Heritage';
