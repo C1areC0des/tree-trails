@@ -1,0 +1,241 @@
+{
+  "type": "FeatureCollection",
+  "features":[
+      {
+        "type": "Feature",
+        "properties": {
+          "postNumber": "1",
+          "treeName": "London Plane",
+          "latinTreeName": "Platanus x hispanica (acerifolia)",
+          "description": "A hybrid of the American and oriental plane, it is London's most planted tree, mainly thanks to Victorians, who planted it due to its extreme tolerance of air pollution.  The tree absorbs pollutants through its bark which it then sheds, creating its unique camouflage bark.",
+          "activity": "Gently stroke your hand up and down the trunk to feel the peeling bark.  How many different colours can you count on the bark?"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates":[
+              -0.0424795,
+              51.5336247
+            ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "postNumber": "2",
+            "treeName": "Golden bamboo",
+            "latinTreeName": "Phyllostachys aurea",
+            "description": "Native to Southeast China, this plant is the fastest growing on the planet and can grow up to 100cm in 24 hours!  Bamboo is very strong and used by many different cultures to make many products, including: scaffolding, ladders, fishing rods, walking sticks and umbrella handles.",
+            "activity": "Run your hand through the leaves and hear it rustle or stand really still next to the bamboo and close your eyes.  Can you hear it rustling in the breeze?",
+            "directions": "Keep an eye out for the plaque as you enter the Children's Playground."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates":[
+              -0.0435423,
+              51.5351713
+            ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "postNumber": "3",
+            "treeName": "Black poplar",
+            "latinTreeName": "Populus nigra betulifolio",
+            "description": "The black poplar is one of the rarest native trees in Britain and the nearby district of Poplar is named because of the large number of black poplars which once grew in the marshy ground beside the Thames.",
+            "directions": "Look into the shrub boundary next to Grove Road."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates":[
+              -0.0430216,
+              51.5358710
+            ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "postNumber": "4",
+            "treeName": "European Yew",
+            "latinTreeName": "Taxus baccata",
+            "description": "The European yew is an ancient tree widely used to build long bows, spearheads and weapons in the middle ages.  Its leave, seeds and bark are highly toxic; a cell destroying property found in its leaves is used for fighting various forms of cancer."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates":[
+              -0.0435557,
+              51.5344120
+            ]
+        }
+      },      
+      {
+        "type": "Feature",
+        "properties": {
+            "postNumber": "5",
+            "treeName": "Black walnut",
+            "latinTreeName": "Juglans nigra",
+            "description": "Native to Eastern North America, the black walnut produces edible nuts that are eaten raw or used as an ingredient in ice cream, cakes, oil and flour.  The sap from the walnut tree can be used to produce syrup and sugar while the wood is highly prized for furniture making, car panelling and flooring.  A chemical produced by the roots stops any other plants from growing underneath it.",
+            "activity": "Can you spot any tasty walnut fruits?  Remove the green husk by rolling it under your foot on hard ground.  You will need to let the nut dry out for several weeks before you can crack the shell open and eat the nut meat."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates":[
+              -0.0437143,
+              51.5344524
+            ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "postNumber": "6",
+            "treeName": "Maidenhair tree",
+            "latinTreeName": "Ginkgo biloba",
+            "description": "Native to China, the gingko is one of a kind.  It is a living fossil which can be traced back 270 million years to the time when the dinosaurs walked the planet.  In China and Japan the nuts from the female tree are served at weddings and Chinese New Year.  Before being cooked they smell like vomit!"
+            
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates":[
+              -0.0467885,
+              51.5350222
+            ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "postNumber": "7",
+            "treeName": "Cider gum tree",
+            "latinTreeName": "Eucalyptus gunnii",
+            "description": "Native to Australia, the cider gum tree produces a syrup which when fermented resembles apple cider, hence the name.  Its bark peels off to expose the white new bark beneath.",
+            "activity": "If you can reach, get a leaf between your fingers and rub it to release a sweet scent."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates":[
+              -0.0474637,
+              51.5350105
+            ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "postNumber": "8",
+            "treeName": "Deodar cedar",
+            "latinTreeName": "Cedrus deodara",
+            "description": "Brought to Britain from its native Himalayan home during the 1830's, this tree can grow to be a giant: up to 60 metres tall.  It is the national tree of Pakistan and Hindus value the deodar cedar as a divine tree.  The inner wood is aromatic and used as incense, essential oil and insect repellent for animals in some countries.",
+            "activity": "How tall is this tree?  Walk away from the tree but at regular intervals bend forward and look through your legs back to the tree.  Stop when your are at a point where you can just see the top of the tree.  The height of the tree is equivalent to the distance that you are fom it."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates":[
+              -0.0481004,
+              51.5351367
+            ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "postNumber": "9",
+            "treeName": "Black Mulberry",
+            "latinTreeName": "Morus nigra",
+            "description": "King James I encouraged the planting of the black mulberry during the 17th century, thinking that the silk-worm ate its leaves and that Britain could therefore start producing silk.  However, he was sadly mistaken because the silk-worm prefers the white mulberry.  The black mulberry grows delicious dark red fruits which have been eaten since the Roman times and can be used for jams and wine.",
+            "activity": "If you are here in the late summer, why not pick some mulberries to take home.  Just be careful as mulberry juice can stain clothing and make sure to rinse the fruits with water before eating them."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates":[
+              -0.0482550,
+              51.5349346
+            ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "postNumber": "10",
+            "treeName": "Indian bean tree",
+            "latinTreeName": "catalpa bignonioides",
+            "description": "The Indian bean tree, native to America, has beautiful heart-shaped leaves and large white flowers.  It's seeds are held in long, dangling bean-like pods, hence the name for the tree.",
+            "activity": "Can you find any of the dried up pods on the floor around the tree?  Break the pod open and count the number of seeds you find inside."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates":[
+              -0.0514059,
+              51.5351667
+            ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "postNumber": "11",
+            "treeName": "Honey locust",
+            "latinTreeName": "Gleditsia tricanthos",
+            "description": "Native to North America, this tree has big spines on its trunk which are thought to protect the tree from grazing animals.  Extracts from the tree have also been used to treat arthritis."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates":[
+              -0.0501362,
+              51.5347137
+            ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "postNumber": "12",
+            "treeName": "Weeping beech",
+            "latinTreeName": "Fagus sylvatica pendula",
+            "description": "This weeping beech is a great tree to hide under because its branches almost reach the floor.  While under its canopy, feel the bumpy gnarled trunk of the tree.",
+            "activity": "How long is the new growth on the branches this year?  The end of the stem is a different colour to last year's growth."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates":[
+              -0.0462829,
+              51.5343961
+            ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "postNumber": "13",
+            "treeName": "Sweet chestnut",
+          "latinTreeName": "Castanea sativa",
+          "description": "'Chestnuts roasting on an open fire' - as this Christmas classic suggests, the nuts from the sweet chestnut tree are great for cooking, roasting and caramelising.  If the nuts are too high to pick, keep an eye out on the ground."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates":[
+              -0.0468475,
+              51.5339146
+            ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "postNumber": "14",
+            "treeName": "Common lime",
+          "latinTreeName": "Tilia x europaea",
+          "description": "Many of the limes within this avenue were planted as part of the original Victoria Park design in 1854.  Avenue tree planting was used by Napoleon during the 18th and 19th centuries to enable him to walk his army for long distances protected by the shade.",
+          "activity": "Walk in the shade of the trees then in the sun in the centre of the avenue.  Is there a temperature difference?"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates":[
+              -0.0466486,
+              51.5331756
+            ]
+        }
+      }
+  ]
+}
