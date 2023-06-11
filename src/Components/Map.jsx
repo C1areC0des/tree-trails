@@ -1,34 +1,45 @@
 import React, { useRef, useEffect } from 'react'
-import { createRoot } from 'react-dom/client'
 import mapboxgl from '!mapbox-gl' // eslint-disable-line import/no-webpack-loader-syntax
-
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN 
 
-const Marker = ({ onClick, children, feature }) => {
-  const _onClick = () => {
-    onClick(feature.properties.message)
-  }
-
-  return (
-    <button onClick={_onClick} className="marker">
-      {children}
-      {feature.properties.title}
-    </button>
-  )
-}
-
-function Map({ longitude, latitude, zoom, geoJson }) {
+function Map({ longitude, latitude, zoom, mapStyle, layer }) {
   const mapContainer = useRef(null)
 
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainer.current,
-      style: 'mapbox://styles/mapbox/streets-v12',
+      style: mapStyle,
       center: [longitude, latitude],
-      zoom: zoom
+      zoom: zoom,
+      minZoom: 13.5
     })
 
+    map.on('click', (event) => {
+      console.log(event.point)
+      // If the user clicked on one of your markers, get its information.
+      const features = map.queryRenderedFeatures(event.point, {
+        layers: [layer]
+      })
+      if (!features.length) {
+        return
+      }
+      console.log(features.length)
+      const feature = features[0]
+
+      const popup = new mapboxgl.Popup({ offset: [0, -15] })
+      .setLngLat(feature.geometry.coordinates)
+      .setHTML(
+        `<h3>${feature.properties.treeName}</h3>
+        <i><h3>${feature.properties.latinTreeName}</h3></i>
+        <p>${feature.properties.description}</p>
+        ${feature.properties.activity ? '<h4>Activity</h4><p>' + feature.properties.activity + '</p>' : ''}
+        ${feature.properties.directions ? `<h4>Directions</h4><p>${feature.properties.directions}</p>` : ''}`
+      )
+      .addTo(map)
+    })
+
+    // Add the icon to center the map on the users's location
     map.addControl(
       new mapboxgl.GeolocateControl({
         positionOptions: {
@@ -41,37 +52,18 @@ function Map({ longitude, latitude, zoom, geoJson }) {
       })
     )
 
-    // Render custom marker components
-    geoJson.features.forEach((feature) => {
-      // Create a React ref
-      const ref = React.createRef()
-      // Create a new DOM node and save it to the React ref
-      ref.current = document.createElement("div")
-      // Render a Marker Component on our new DOM node
-      createRoot(ref.current).render(
-        <Marker onClick={markerClicked} feature={feature} />
-      )
-
-      // Create a Mapbox Marker at our new DOM node
-      new mapboxgl.Marker(ref.current)
-        .setLngLat(feature.geometry.coordinates)
-        .addTo(map)
-    })
-
     // Clean up on unmount
-    return () => map.remove()
+    return () => {
+      map.off('click') // Remove the event listener
+      map.remove() // Clean up the map instance
+    }
 
-  }, [longitude, latitude, zoom, geoJson.features])
-
-const markerClicked = (title) => {
-  window.alert(title)
-}
-
+  }, [longitude, latitude, zoom])
 
     return (
-      <div>
+      <>
         <div ref={mapContainer} className="map-container" />
-      </div>
+      </>
       )
 }
 

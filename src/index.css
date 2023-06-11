@@ -12,24 +12,14 @@ code {
     monospace;
 }
 
+h1 {
+  position: absolute;
+  z-index: 1;
+  margin: 10px 0 0 10px;
+  font-size: 20px;
+}
+
 .map-container {
   width: 100vw;
-  height: 90vh;
-}
-
-.marker {
-  width: 20px;
-  height: 30px;
-  /* background-color: green;  */
-  background-image: url("/src/tree_marker.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  color: white;
-  padding-top: 5px;
-}
-
-button {
-  border: none;
-  background-color: transparent;
+  height: 100vh;
 }
