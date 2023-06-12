@@ -11,12 +11,12 @@ import World from './Pages/World'
 function App() {
   return (
     <React.StrictMode>
-      <BrowserRouter> 
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/heritage-trees" element={<Heritage />} />
-            <Route path='/world-trees' element={<World />} />
-          </Routes>
+      <BrowserRouter basename={process.env.PUBLIC_URL}> 
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/heritage-trees" element={<Heritage />} />
+          <Route path="/world-trees" element={<World />} />
+        </Routes>
       </BrowserRouter>
     </React.StrictMode>
 
