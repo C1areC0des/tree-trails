@@ -19,7 +19,52 @@ h1 {
   font-size: 20px;
 }
 
+.image-div {
+  background-image: url('/Users/Flare222/C1areC0des/tree-trails/src/data-sources/maria-teneva-QhPFYmTB4Ls-unsplash.jpg');
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-h1 {
+  position: static;
+  margin: 0;
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 300px;
+}
+
+.trail-btn {
+  background-color: darkolivegreen;
+  border: solid 1px black;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 10px 5px;
+  min-width: 120px;
+}
+
+.para-div {
+  padding: 10px;
+}
+
 .map-container {
   width: 100vw;
   height: 100vh;
+}
+
+@media only screen and (min-width: 600px) {
+  .image-div {
+    min-height: 400px;
+  }
 }
