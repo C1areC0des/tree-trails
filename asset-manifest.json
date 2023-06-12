@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tree-trails/static/css/main.c24635d5.css",
+    "main.js": "/tree-trails/static/js/main.91a18b37.js",
+    "static/js/787.19d0361e.chunk.js": "/tree-trails/static/js/787.19d0361e.chunk.js",
+    "static/media/maria-teneva-QhPFYmTB4Ls-unsplash.jpg": "/tree-trails/static/media/maria-teneva-QhPFYmTB4Ls-unsplash.96b1e95d6462771f5b0a.jpg",
+    "index.html": "/tree-trails/index.html",
+    "main.c24635d5.css.map": "/tree-trails/static/css/main.c24635d5.css.map",
+    "main.91a18b37.js.map": "/tree-trails/static/js/main.91a18b37.js.map",
+    "787.19d0361e.chunk.js.map": "/tree-trails/static/js/787.19d0361e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c24635d5.css",
+    "static/js/main.91a18b37.js"
+  ]
+}
