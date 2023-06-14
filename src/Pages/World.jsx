@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Map from '../Components/Map'
+import MenuButton from '../Components/MenuButton'
+import FullPageMenu from '../Components/FullPageMenu'
 
 function World() {
   const mapStyle = 'mapbox://styles/flare222/cliptd4p400q801r17p0r8vym'
@@ -16,9 +18,16 @@ function World() {
     zoom = 14.40
   }
 
+  const [isMenuOpen, setMenuOpen] = useState(false)
+  
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen)
+  }
+
   return (
     <>
-      <h1>World Tree Trail</h1>
+      <h1><MenuButton toggleMenu={toggleMenu} />World Tree Trail</h1>
+      <FullPageMenu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
       <Map longitude={lng} latitude={lat} zoom={zoom} mapStyle={mapStyle} layer={layer}/>
     </>
   )
