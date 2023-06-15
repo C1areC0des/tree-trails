@@ -15,11 +15,17 @@ function Heritage() {
   let zoom = 14.78
   
   if (width <= 500) {
-    lng = -0.03407
-    lat = 51.53895
-    zoom = 14.2
+    lng = -0.036
+    lat = 51.532
+    zoom = 13.68
   }
 
+  const maxBounds = [
+    [-0.05897928865135782,
+      51.529231178567045],
+    [-0.020133754104108448,
+      51.550375921775924]
+  ]
 
   const [isMenuOpen, setMenuOpen] = useState(false)
   
@@ -34,7 +40,7 @@ function Heritage() {
       <h1><MenuButton toggleMenu={toggleMenu} />
       Heritage Tree Trail</h1>
       <FullPageMenu isOpen={isMenuOpen} toggleMenu={toggleMenu} /> 
-      <Map longitude={lng} latitude={lat} zoom={zoom} mapStyle={mapStyle} layer={layer}/>
+      <Map longitude={lng} latitude={lat} zoom={zoom} mapStyle={mapStyle} layer={layer} maxBounds={maxBounds}/>
     </>
   )
 }

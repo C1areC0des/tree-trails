@@ -23,7 +23,7 @@ h1 {
   position: absolute;
   z-index: 1;
   margin: 10px 0 0 10px;
-  font-size: 20px;
+  font-size: 22px;
   background-color: #ffffffb5;
   padding: 5px 10px 5px 5px;
 }
@@ -32,6 +32,7 @@ p, a {
   font-size: 1.2em;
 }
 
+/* ! Homepage */
 .image-div {
   background-image: url('/Users/Flare222/C1areC0des/tree-trails/src/data-sources/yassine-khalfalli-bEvfhzqsWvo-unsplash.jpg');
   min-height: 250px;
@@ -130,10 +131,14 @@ p > a:hover {
   color: #222;
 }
 
+/* ! Nav Menu */
 .icon-btn {
   background-color: transparent;
+  color: black;
   border: none;
   font-size: 25px;
+  margin: 0;
+  padding: 0 5px;
   margin-right: 20px;
 }
 
@@ -170,9 +175,29 @@ p > a:hover {
   color: #fd0;;
 }
 
+/* ! The Map */
 .map-container {
   width: 100vw;
   height: 100vh;
+}
+
+/* ! The popups */
+.mapboxgl-popup-close-button {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+h3, i > h2, .mapboxgl-popup-content > p{
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+i > h2, .mapboxgl-popup-content > p {
+  margin-top: 5px;
 }
 
 @media only screen and (min-width: 600px) {

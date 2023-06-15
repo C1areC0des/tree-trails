@@ -18,6 +18,13 @@ function World() {
     zoom = 14.40
   }
 
+  const maxBounds = [
+    [-0.06690482208617254,
+      51.5257601687876],
+    [-0.0306663703949539,
+      51.54541492559309]
+  ]
+
   const [isMenuOpen, setMenuOpen] = useState(false)
   
   const toggleMenu = () => {
@@ -28,7 +35,7 @@ function World() {
     <>
       <h1><MenuButton toggleMenu={toggleMenu} />World Tree Trail</h1>
       <FullPageMenu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
-      <Map longitude={lng} latitude={lat} zoom={zoom} mapStyle={mapStyle} layer={layer}/>
+      <Map longitude={lng} latitude={lat} zoom={zoom} mapStyle={mapStyle} layer={layer} maxBounds={maxBounds}/>
     </>
   )
 }

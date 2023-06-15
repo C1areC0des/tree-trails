@@ -3,7 +3,7 @@ import mapboxgl from '!mapbox-gl' // eslint-disable-line import/no-webpack-loade
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN 
 
-function Map({ longitude, latitude, zoom, mapStyle, layer }) {
+function Map({ longitude, latitude, zoom, mapStyle, layer, maxBounds }) {
   const mapContainer = useRef(null)
 
   useEffect(() => {
@@ -12,7 +12,8 @@ function Map({ longitude, latitude, zoom, mapStyle, layer }) {
       style: mapStyle,
       center: [longitude, latitude],
       zoom: zoom,
-      minZoom: 13.5
+      minZoom: 13.5,
+      maxBounds: maxBounds
     })
 
     map.on('click', (event) => {
@@ -30,11 +31,11 @@ function Map({ longitude, latitude, zoom, mapStyle, layer }) {
       const popup = new mapboxgl.Popup({ offset: [0, -15] })
       .setLngLat(feature.geometry.coordinates)
       .setHTML(
-        `<h3>${feature.properties.treeName}</h3>
-        <i><h3>${feature.properties.latinTreeName}</h3></i>
+        `<h2>${feature.properties.treeName}</h2>
+        <i><h2>${feature.properties.latinTreeName}</h2></i>
         <p>${feature.properties.description}</p>
-        ${feature.properties.activity ? '<h4>Activity</h4><p>' + feature.properties.activity + '</p>' : ''}
-        ${feature.properties.directions ? `<h4>Directions</h4><p>${feature.properties.directions}</p>` : ''}`
+        ${feature.properties.activity ? '<h3>Activity</h3><p>' + feature.properties.activity + '</p>' : ''}
+        ${feature.properties.directions ? `<h3>Directions</h3><p>${feature.properties.directions}</p>` : ''}`
       )
       .addTo(map)
     })
@@ -58,7 +59,7 @@ function Map({ longitude, latitude, zoom, mapStyle, layer }) {
       map.remove() // Clean up the map instance
     }
 
-  }, [longitude, latitude, zoom])
+  }, [longitude, latitude, zoom, layer, mapStyle, maxBounds])
 
     return (
       <>
