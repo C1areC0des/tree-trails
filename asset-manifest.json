@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/tree-trails/static/css/main.4eb6492c.css",
-    "main.js": "/tree-trails/static/js/main.f1bcd743.js",
+    "main.css": "/tree-trails/static/css/main.da35e763.css",
+    "main.js": "/tree-trails/static/js/main.e72d8172.js",
     "static/js/787.19d0361e.chunk.js": "/tree-trails/static/js/787.19d0361e.chunk.js",
-    "static/media/yassine-khalfalli-bEvfhzqsWvo-unsplash.jpg": "/tree-trails/static/media/yassine-khalfalli-bEvfhzqsWvo-unsplash.f4af172e2f09fb492fce.jpg",
+    "static/media/matt-artz-nTRDnDdDYk8-unsplash (1).jpg": "/tree-trails/static/media/matt-artz-nTRDnDdDYk8-unsplash (1).57ca607075a56cc662ea.jpg",
     "index.html": "/tree-trails/index.html",
-    "main.4eb6492c.css.map": "/tree-trails/static/css/main.4eb6492c.css.map",
-    "main.f1bcd743.js.map": "/tree-trails/static/js/main.f1bcd743.js.map",
+    "main.da35e763.css.map": "/tree-trails/static/css/main.da35e763.css.map",
+    "main.e72d8172.js.map": "/tree-trails/static/js/main.e72d8172.js.map",
     "787.19d0361e.chunk.js.map": "/tree-trails/static/js/787.19d0361e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4eb6492c.css",
-    "static/js/main.f1bcd743.js"
+    "static/css/main.da35e763.css",
+    "static/js/main.e72d8172.js"
   ]
 }
