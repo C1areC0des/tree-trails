@@ -34,7 +34,7 @@ p, a {
 
 /* ! Homepage */
 .image-div {
-  background-image: url('/Users/Flare222/C1areC0des/tree-trails/src/data-sources/yassine-khalfalli-bEvfhzqsWvo-unsplash.jpg');
+  background-image: url('/Users/Flare222/C1areC0des/tree-trails/src/data-sources/matt-artz-nTRDnDdDYk8-unsplash (1).jpg');
   min-height: 250px;
   display: flex;
   flex-direction: column;
@@ -82,6 +82,7 @@ p, a {
 
 .coffee {
   padding: 12px 15px 8px;
+  border: solid black 2px;
 }
 
 .para-div {
@@ -184,6 +185,9 @@ p > a:hover {
 /* ! The popups */
 .mapboxgl-popup-close-button {
   font-size: 25px;
+  color: black;
+  padding: 1px 6px;
+  margin: none;
 }
 
 h2 {
@@ -208,7 +212,7 @@ i > h2, .mapboxgl-popup-content > p {
     min-height: 400px;
   }
   .para-div {
-    width:550px;
+    width:650px;
     align-self: center;
   }
   .credit {
